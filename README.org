@@ -1,0 +1,7 @@
+#+TITLE: A minor mode to copy text from buffer/s to a buffer
+
+Usage:
+- Set the variable _pif-copy-to-buffer-name_ to a buffer name or use the function *pif-copy-to-buffer-set-buffer* to select a buffer.
+- Enable the *pif-copy-to-buffer-minor-mode* in the buffer where the text to be copied is, or use *global-pif-copy-to-buffer-minor-mode* to copy from all open text or pdf-view buffers.
+- To copy use the function *pif-copy-to-buffer* or default keybinding 'C-w'; the variable _pif-copy-to-buffer-copy-key_ can be used to set other keybinding.
+- The variables __pif-copy-to-buffer-insert-before_ and _pif-copy-to-buffer-insert-after__ can be used to insert text before and after the copied text.
