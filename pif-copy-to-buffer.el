@@ -95,10 +95,9 @@
      copied to buffer `pif-copy-to-buffer-name'."
   :init-value nil
   :lighter " PCTB"
-  :keymap pif-copy-to-buffer-keymap
+  :keymap (pif-copy-to-buffer-keymap)
 
-  (setf (cdr (assoc 'pif-copy-to-buffer-minor-mode minor-mode-map-alist))
-    (pif-copy-to-buffer-keymap)))
+  (setf (cdr (assoc 'pif-copy-to-buffer-minor-mode minor-mode-map-alist)) (pif-copy-to-buffer-keymap)))
 
 (define-globalized-minor-mode global-pif-copy-to-buffer-minor-mode pif-copy-to-buffer-minor-mode pif-copy-to-buffer-minor-mode)
 
